@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>todo application</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+   
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+            box-sizing: border-box;
+        }
+
+
+        .remove-btn{
+            display: none;
+        }
+        li.list-group-item:hover > .remove-btn{
+            display: block;
+        }
+
+        .container{
+            
+            margin: auto;
+            padding: 10px;
+        }
+
+        body{
+            background-image: linear-gradient(120deg,#9dc8f0,#ffeebe);
+            min-height: 100hv;
+        }
+        h1{
+            color: rgb(87, 59, 59);
+            text-decoration:underline ;
+        }
+
+
+       
+    </style>
+    <div class="container"><br>
+        <h1><b> javascropt Todo Application </b></h1><br>
+        <div class="row">
+            <div class="col-md-8">
+
+                <input type="text" onfocus="" class="form-control" id="task_input">
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="btn btn-success" onclick="addEvent()">ADD TASK</a>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="list-group" id="tasks">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="mein.js"></script>
+</body>
+</html>
